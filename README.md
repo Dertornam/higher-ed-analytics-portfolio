@@ -3,11 +3,11 @@
 All datasets are **synthetic** and anonymized. This repo showcases survey analytics, data cleaning, reporting automation, and SPSS recode workflows.
 
 ## Highlights for reviewers
-- **Satisfaction map:** `01-student-satisfaction-toolkit/outputs/fig_importance_vs_satisfaction.png`
-- **Cohort Likerts:** `02-microsurvey-pulse/outputs/fig_likert_by_cohort.png`
-- **Cleaned employers CSV:** `03-employer-cleaning/outputs/employers_clean.csv`
-- **Auto report (Markdown):** `04-reporting-automation/outputs/report.md`
-- **SPSS snippet:** `05-spss-syntax/recode_goals.sps`
+- **Satisfaction map:** [PNG](01-student-satisfaction-toolkit/outputs/fig_importance_vs_satisfaction.png)
+- **Cohort Likerts:** [PNG](02-microsurvey-pulse/outputs/fig_likert_by_cohort.png)
+- **Cleaned employers:** [CSV](03-employer-cleaning/outputs/employers_clean.csv)
+- **Auto report:** [Markdown](04-reporting-automation/outputs/report.md)
+- **SPSS snippet:** [File](05-spss-syntax/recode_goals.sps)
 
 ## Project map
 1. `01-student-satisfaction-toolkit` — 500 synthetic responses, 12 items (1–7). Item/scale summaries + visuals.  
