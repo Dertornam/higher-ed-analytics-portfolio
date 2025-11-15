@@ -1,6 +1,6 @@
 # Higher-Ed Analytics Portfolio (Synthetic)
 
-All datasets are **synthetic** and anonymized. This repo showcases survey analytics, data cleaning, reporting automation, and SPSS recode workflows.
+All datasets are anonymized. No PII or restricted records are used; the workflows demonstrate governance-friendly analytics, survey, data cleaning, reporting automation, and SPSS recode workflows.
 
 ## Highlights for reviewers
 - **Satisfaction map:** [PNG](01-student-satisfaction-toolkit/outputs/fig_importance_vs_satisfaction.png)
