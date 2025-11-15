@@ -3,43 +3,102 @@ layout: default
 title: Higher-Ed Analytics Portfolio
 ---
 
-# Overview
-Results-focused samples for institutional research and analytics. The goal is to show how I move from messy inputs to clear decisions—fast and reproducibly.
+<style>
+.hero { padding: 2.5rem 1rem; background: linear-gradient(135deg,#0ea5e9 0%, #10b981 100%);
+        color: #fff; border-radius: 12px; text-align: center; margin-bottom: 1.5rem; }
+.hero h1 { margin: 0 0 .25rem 0; font-size: 2.0rem; }
+.btn-row { margin-top: 1rem; display: inline-flex; gap: .75rem; flex-wrap: wrap; }
+.btn { display:inline-block; padding:.6rem 1rem; border-radius:999px; text-decoration:none; font-weight:600; }
+.btn.primary { background:#fff; color:#0f172a; }
+.btn.ghost { border:2px solid #fff; color:#fff; }
+.grid { display:grid; gap:1rem; }
+@media(min-width:900px){ .grid.cols-2 { grid-template-columns: 1fr 1fr; } }
+.card { background:#fff; border-radius:12px; padding:1rem; box-shadow:0 2px 12px rgba(0,0,0,.06); }
+.caption { font-size:.95rem; color:#475569; margin:.5rem 0 0 0; }
+.kpis { display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; }
+.kpi { background:#ecfeff; border:1px solid #cffafe; border-radius:10px; padding:.5rem .75rem; font-weight:600; }
+.badges span { display:inline-block; background:#f1f5f9; border-radius:999px; padding:.35rem .7rem; margin:.25rem; }
+figure { margin:0; }
+figure img { width:100%; border-radius:10px; }
+figcaption { font-size:.95rem; color:#475569; margin-top:.35rem; }
+footer.small { margin-top:1.5rem; font-size:.9rem; color:#64748b; }
+</style>
 
-**Live repo:** https://github.com/Dertornam/higher-ed-analytics-portfolio  
-**Download ZIP:** https://github.com/Dertornam/higher-ed-analytics-portfolio/archive/refs/heads/main.zip
+<div class="hero">
+  <h1>Turning Higher-Ed Data into Actionable Insights</h1>
+  <p>From messy sources to clear decisions—cleaning, analysis, and automated reporting.</p>
+  <div class="btn-row">
+    <a class="btn primary" href="#work">Explore My Projects</a>
+    <a class="btn ghost" href="https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}">View on GitHub</a>
+    <a class="btn ghost" href="./resume.pdf">Download Résumé</a>
+  </div>
+  <div class="kpis" style="margin-top:1rem;">
+    <div class="kpi">RNL PSOL multi-year analysis</div>
+    <div class="kpi">SPSS + Python reproducibility</div>
+    <div class="kpi">Auto weekly Markdown reports</div>
+  </div>
+</div>
+
+## Overview
+Imagine messy student surveys and employer lists transformed into decisions leaders can act on.  
+This portfolio shows how I clean, analyze, and visualize higher-ed data—fast and repeatably.
+
+**Process**: Raw Data → Cleaning → Analysis → Visualization → Insights
 
 ---
 
-## What’s inside (at a glance)
-- **Student Satisfaction Toolkit** — 500 synthetic responses, 12 items (1–7). Item/scale summaries, gaps, and visuals.  
-- **Micro-Survey Pulse** — 300 responses, 3 Likert items + 0–10 recommendation. Cohort comparisons + NPS-style score.  
-- **Employer Cleaning** — string normalization → canonical employer names (no external deps).  
-- **Reporting Automation** — composes a weekly Markdown highlights report from the two surveys.  
-- **SPSS Syntax** — reusable `.sps` snippets for common recodes.
+## Why Higher-Ed Analytics?
+- Improve student satisfaction, retention, and time-to-degree.  
+- Support accreditation/IPEDS reporting with trustworthy pipelines.  
+- Give leaders tight, visual summaries they can use in minutes.
 
 ---
 
-## Featured visuals
-- **Satisfaction map**  
-  ![Importance vs Satisfaction](https://raw.githubusercontent.com/Dertornam/higher-ed-analytics-portfolio/main/01-student-satisfaction-toolkit/outputs/fig_importance_vs_satisfaction.png)
+## Featured visuals {#work}
 
-- **Cohort Likerts**  
-  ![Likert by Cohort](https://raw.githubusercontent.com/Dertornam/higher-ed-analytics-portfolio/main/02-microsurvey-pulse/outputs/fig_likert_by_cohort.png)
+<div class="grid cols-2">
+  <div class="card">
+    <figure>
+      <img src="./fig_1.png" alt="Importance vs Satisfaction map">
+      <figcaption><strong>Satisfaction Map.</strong> Prioritizes gaps between importance and satisfaction to guide resource allocation.</figcaption>
+    </figure>
+  </div>
+  <div class="card">
+    <figure>
+      <img src="./fig_2.png" alt="Cohort Likert comparisons">
+      <figcaption><strong>Cohort Likerts.</strong> Compares item-level satisfaction across student groups to target interventions.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<p class="caption">
+See also: <a href="./report.md">Weekly Insights (Markdown)</a> · <a href="./cleaned.csv">Cleaned employers CSV</a>
+</p>
 
 ---
 
-## Artifacts (open in browser)
-- **Weekly Insights (Markdown):**  
-  https://raw.githubusercontent.com/Dertornam/higher-ed-analytics-portfolio/main/04-reporting-automation/outputs/report.md  
-- **Cleaned employers (CSV):**  
-  https://raw.githubusercontent.com/Dertornam/higher-ed-analytics-portfolio/main/03-employer-cleaning/outputs/employers_clean.csv
+## Mini case study: Data-informed improvement
+**Challenge:** Identify the levers behind student satisfaction and convert findings into an executive brief.  
+**Approach:** Merged multi-year RNL PSOL responses; built SPSS syntax for recodes; used Python for charts and an automated Markdown report; framed actions with Improvement Science (PDSA).  
+**Impact:** Clear, prioritized actions for program leads; reproducible pipeline for semester refreshes.
 
 ---
 
-## How to run locally
-```bash
-python 01-student-satisfaction-toolkit/src/sps_analysis.py
-python 02-microsurvey-pulse/src/analyze_micro.py
-python 03-employer-cleaning/src/clean_employers.py
-python 04-reporting-automation/src/generate_report.py
+## Skills & Tools
+<div class="badges">
+  <span>SPSS</span><span>Python</span><span>Pandas</span><span>Matplotlib</span>
+  <span>Tableau</span><span>SQL</span><span>Markdown automation</span>
+  <span>GitHub Actions</span><span>Data governance & policy</span>
+</div>
+
+---
+
+## What I bring to your team
+- Data cleaning & reproducibility across SPSS and Python.  
+- Survey analytics expertise (Likerts, gap analysis, cohort comparisons).  
+- Automated reporting workflows that keep leaders updated weekly.  
+- Improvement Science (PDSA) framing to turn insights into practice.
+
+<footer class="small">
+  All datasets shown here are anonymized.
+</footer>
