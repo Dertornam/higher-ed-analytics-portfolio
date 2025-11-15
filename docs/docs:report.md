@@ -1,4 +1,4 @@
-# Weekly Insights (Synthetic)
+# Weekly Insights (Anonymized)
 
 This example shows how an automated report could summarize key metrics from surveys.
 
