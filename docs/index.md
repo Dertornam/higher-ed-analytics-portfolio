@@ -4,24 +4,20 @@ title: Higher-Ed Analytics Portfolio
 ---
 
 <style>
-.hero { padding: 2.5rem 1rem; background: linear-gradient(135deg,#0ea5e9 0%, #10b981 100%);
-        color: #fff; border-radius: 12px; text-align: center; margin-bottom: 1.5rem; }
-.hero h1 { margin: 0 0 .25rem 0; font-size: 2.0rem; }
-.btn-row { margin-top: 1rem; display: inline-flex; gap: .75rem; flex-wrap: wrap; }
-.btn { display:inline-block; padding:.6rem 1rem; border-radius:999px; text-decoration:none; font-weight:600; }
-.btn.primary { background:#fff; color:#0f172a; }
-.btn.ghost { border:2px solid #fff; color:#fff; }
-.grid { display:grid; gap:1rem; }
-@media(min-width:900px){ .grid.cols-2 { grid-template-columns: 1fr 1fr; } }
-.card { background:#fff; border-radius:12px; padding:1rem; box-shadow:0 2px 12px rgba(0,0,0,.06); }
-.caption { font-size:.95rem; color:#475569; margin:.5rem 0 0 0; }
-.kpis { display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; }
-.kpi { background:#ecfeff; border:1px solid #cffafe; border-radius:10px; padding:.5rem .75rem; font-weight:600; }
-.badges span { display:inline-block; background:#f1f5f9; border-radius:999px; padding:.35rem .7rem; margin:.25rem; }
-figure { margin:0; }
-figure img { width:100%; border-radius:10px; }
-figcaption { font-size:.95rem; color:#475569; margin-top:.35rem; }
-footer.small { margin-top:1.5rem; font-size:.9rem; color:#64748b; }
+:root { --bg:#0f172a; --card:#0b1220; --text:#e5e7eb; --muted:#94a3b8; --accent1:#22d3ee; --accent2:#34d399; }
+.hero { padding:2.5rem 1rem; background: linear-gradient(135deg, var(--accent1), var(--accent2));
+  color:#0b1220; border-radius:12px; text-align:center; margin-bottom:1.5rem; }
+.hero h1{ margin:0 0 .25rem 0; font-size:2.0rem; }
+.btn-row{ margin-top:1rem; display:inline-flex; gap:.75rem; flex-wrap:wrap; }
+.btn{ display:inline-block; padding:.6rem 1rem; border-radius:999px; text-decoration:none; font-weight:600; }
+.btn.primary{ background:#0b1220; color:#e5e7eb; }
+.btn.ghost{ border:2px solid #0b1220; color:#0b1220; }
+.grid{ display:grid; gap:1rem; } @media(min-width:900px){ .grid.cols-2{ grid-template-columns:1fr 1fr; } }
+.card{ background:var(--card); color:var(--text); border-radius:12px; padding:1rem; box-shadow:0 2px 12px rgba(0,0,0,.4); }
+.caption, figcaption{ color:var(--muted); }
+figure{ margin:0; } figure img{ width:100%; border-radius:10px; }
+.card:hover{ box-shadow:0 8px 30px rgba(0,0,0,.55); transform:translateY(-1px); transition:.18s; }
+footer.small{ margin-top:1.5rem; font-size:.9rem; color:var(--muted); }
 </style>
 
 <div class="hero">
@@ -40,7 +36,7 @@ footer.small { margin-top:1.5rem; font-size:.9rem; color:#64748b; }
 </div>
 
 ## Overview
-Imagine messy student surveys and employer lists transformed into decisions leaders can act on.  
+Imagine messy student surveys and employer lists transformed into decisions leaders can act on.
 This portfolio shows how I clean, analyze, and visualize higher-ed data—fast and repeatably.
 
 **Process**: Raw Data → Cleaning → Analysis → Visualization → Insights
