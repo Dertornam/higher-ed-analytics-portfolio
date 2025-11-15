@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 title: Higher-Ed Analytics Portfolio
-description: Student surveys, data cleaning, dashboards & automated reporting
+description: Anonymized datasets, data cleaning, dashboards & automated reporting
 plugins:
   - jekyll-sitemap
