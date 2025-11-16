@@ -92,9 +92,9 @@ See also: <a href="./report.md">Weekly Insights (Markdown)</a> · <a href="./cle
 
 ## Skills & Tools
 <div class="badges">
-  <span>SPSS</span><span>Python</span><span>Pandas</span><span>Matplotlib</span>
-  <span>Tableau</span><span>SQL</span><span>Markdown automation</span>
-  <span>GitHub Actions</span><span>Data governance & policy</span>
+  <span>SPSS</span> <span>Python</span> <span>Pandas</span> <span>Matplotlib</span>
+  <span>Tableau</span> <span>SQL</span> <span>Markdown automation</span>
+  <span>GitHub Actions</span> <span>Data governance & policy</span>
 </div>
 
 ---
