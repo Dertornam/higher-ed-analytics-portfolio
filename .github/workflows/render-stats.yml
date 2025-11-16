@@ -1,0 +1,21 @@
+name: Render charts & stats
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install pandas matplotlib numpy statsmodels scipy
+      - name: Run statistics
+        env:
+          SURVEY_CSV: docs/01-student-satisfaction-toolkit/data/student_satisfaction.csv
+        run: |
+          python 06-stats-and-modeling/src/run_stats.py
+      - name: Commit updated outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Refresh statistical outputs"
