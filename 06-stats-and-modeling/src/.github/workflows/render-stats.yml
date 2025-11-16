@@ -1,0 +1,26 @@
+name: Render charts & stats
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install pandas matplotlib numpy statsmodels scipy
+      - name: Re-generate visuals & stats
+        env:
+          # Change if your CSV is elsewhere; this fallback works if you put a CSV in docs/cleaned.csv
+          SURVEY_CSV: docs/cleaned.csv
+        run: |
+          python 01-student-satisfaction-toolkit/src/sps_analysis.py || true
+          python 02-microsurvey-pulse/src/analyze_micro.py || true
+          python 06-stats-and-modeling/src/run_stats.py
+          cp 01-student-satisfaction-toolkit/outputs/fig_importance_vs_satisfaction.png docs/fig_1.png || true
+          cp 02-microsurvey-pulse/outputs/fig_likert_by_cohort.png docs/fig_2.png || true
+      - name: Commit updated outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Refresh visuals + statistical outputs"
