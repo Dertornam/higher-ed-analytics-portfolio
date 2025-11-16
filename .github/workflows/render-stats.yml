@@ -22,18 +22,12 @@ jobs:
 
       - name: Show repo tree (top)
         run: |
-          echo "== top =="
-          ls -la
-          echo "== 02-microsurvey-pulse =="
-          ls -la 02-microsurvey-pulse || true
-          echo "== 02-microsurvey-pulse/data =="
-          ls -la 02-microsurvey-pulse/data || true
-          echo "== docs =="
-          ls -la docs || true
-          echo "== docs/02-microsurvey-pulse =="
-          ls -la docs/02-microsurvey-pulse || true
-          echo "== docs/02-microsurvey-pulse/data =="
-          ls -la docs/02-microsurvey-pulse/data || true
+          echo "== top =="; ls -la
+          echo "== 02-microsurvey-pulse =="; ls -la 02-microsurvey-pulse || true
+          echo "== 02-microsurvey-pulse/data =="; ls -la 02-microsurvey-pulse/data || true
+          echo "== docs =="; ls -la docs || true
+          echo "== docs/02-microsurvey-pulse =="; ls -la docs/02-microsurvey-pulse || true
+          echo "== docs/02-microsurvey-pulse/data =="; ls -la docs/02-microsurvey-pulse/data || true
 
       - name: Detect CSV path
         run: |
@@ -44,41 +38,34 @@ jobs:
             "docs/survey.csv"
             "docs/cleaned.csv"
           )
-          FOUND=""
           for p in "${CANDIDATES[@]}"; do
             if [ -f "$p" ]; then
-              FOUND="$p"
-              break
+              echo "Using CSV: $p"
+              echo "SURVEY_CSV=$p" >> "$GITHUB_ENV"
+              exit 0
             fi
           done
-          if [ -z "$FOUND" ]; then
-            echo "ERROR: No suitable CSV found. Put a numeric survey CSV in one of:"
-            printf '%s\n' "${CANDIDATES[@]}"
-            exit 1
-          fi
-          echo "Using CSV: $FOUND"
-          echo "SURVEY_CSV=$FOUND" >> $GITHUB_ENV
+          echo "ERROR: No suitable CSV found"; exit 1
 
       - name: Run statistics
         run: |
           python 06-stats-and-modeling/src/run_stats.py
-          echo "== wrote files =="
-          ls -la docs | grep -E 'desc_stats|corr_matrix|corr_heatmap|regression_results' || true
+          echo "== wrote files =="; ls -la docs | grep -E 'desc_stats|corr_matrix|corr_heatmap|regression_results' || true
 
-      - name: Commit updated outputs
-              - name: Commit updated outputs (manual)
+      - name: Commit updated outputs (manual)
         env:
           REPO: ${{ github.repository }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -e
           git config user.name  "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
-          git add docs/desc_stats.csv docs/corr_matrix.csv docs/corr_heatmap.png docs/regression_results.md
-          git commit -m "Refresh statistical outputs" || echo "No changes to commit"
-
-          # ensure the remote uses the token with write perms
-          git remote set-url origin "https://x-access-token:${TOKEN}@github.com/${REPO}.git"
-          git push origin HEAD:main
-        with:
-          commit_message: "Refresh statistical outputs"
+          git add docs/desc_stats.csv docs/corr_matrix.csv docs/corr_heatmap.png docs/regression_results.md || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Refresh statistical outputs"
+            git remote set-url origin "https://x-access-token:${TOKEN}@github.com/${REPO}.git"
+            git push origin HEAD:main
+          fi
