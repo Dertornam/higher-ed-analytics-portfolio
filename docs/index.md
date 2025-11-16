@@ -80,6 +80,16 @@ See also: <a href="./report.md">Weekly Insights (Markdown)</a> · <a href="./cle
 
 ---
 
+## Statistical analysis
+
+- **Descriptive statistics:** [CSV]({{ '/desc_stats.csv' | relative_url }})
+- **Correlation matrix:** [CSV]({{ '/corr_matrix.csv' | relative_url }}) ·
+  [Heatmap]({{ '/corr_heatmap.png' | relative_url }})
+- **Regression (OLS):** [Results]({{ '/regression_results.md' | relative_url }})
+
+*Runs on anonymized datasets and refreshes via GitHub Actions.*
+---
+
 ## Skills & Tools
 <div class="badges">
   <span>SPSS</span><span>Python</span><span>Pandas</span><span>Matplotlib</span>
