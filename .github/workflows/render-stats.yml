@@ -6,15 +6,38 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: '3.11' }
-      - run: pip install pandas matplotlib numpy statsmodels scipy
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install libs
+        run: |
+          pip install pandas matplotlib numpy statsmodels scipy tabulate
+
+      - name: Show repo tree (top)
+        run: |
+          ls -la
+          echo "----"
+          ls -la 02-microsurvey-pulse || true
+          ls -la 02-microsurvey-pulse/data || true
+          ls -la docs || true
+
       - name: Run statistics
         env:
-          SURVEY_CSV: docs/02-microsurvey-pulse/data/microsurvey_responses.csv
+          # Use the EXACT path of your numeric survey CSV.
+          # If your CSV is in the repo root:
+          SURVEY_CSV: 02-microsurvey-pulse/data/microsurvey_responses.csv
+          # If it is actually under docs/, switch to:
+          # SURVEY_CSV: docs/02-microsurvey-pulse/data/microsurvey_responses.csv
         run: |
           python 06-stats-and-modeling/src/run_stats.py
+          echo "Wrote files (if successful):"
+          ls -la docs | grep -E 'desc_stats|corr_matrix|corr_heatmap|regression_results' || true
+
       - name: Commit updated outputs
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
