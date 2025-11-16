@@ -135,8 +135,11 @@ I turn complex, real-world data into **clear actionable insight for decision mak
 
 ## Contact & links
 
-<p>
-  <a class="port-btn" href="mailto:d.double76@icloud.com">Email me</a>
+<a class="port-btn"
+   href="mailto:d.double76@icloud.com?subject=Portfolio%20inquiry%20%E2%80%93%20Derrick%20Dzormeku&body=Hi%20Derrick,%0D%0A%0D%0AI%27m%20reaching%20out%20about%20your%20analytics%20portfolio.%20Could%20we%20schedule%20a%20brief%20call%3F%0D%0A%0D%0AThanks!"
+>
+  Email me
+</a>
   <a class="port-btn" href="https://www.linkedin.com/in/derrick-dzormeku-mba-75288644" target="_blank" rel="noopener">LinkedIn</a>
   <a class="port-btn" href="{{ site.github.repository_url }}">GitHub repo</a>
   <a class="port-btn" href="{{ '/resume.pdf' | relative_url }}">Download résumé</a>
