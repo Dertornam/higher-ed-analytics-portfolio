@@ -116,13 +116,30 @@ I turn complex, real-world data into **clear actionable insight for decision mak
 - Cut analysis turnaround from **2 months to 3 weeks** with reproducible workflows.
 
 ---
+<style>
+/* simple, theme-independent buttons */
+.port-btn{
+  display:inline-block;
+  padding:.6rem 1rem;
+  margin:.25rem .4rem 0 0;
+  border-radius:8px;
+  background:#0366d6;       /* GitHub blue */
+  color:#fff !important;
+  text-decoration:none !important;
+  border:1px solid rgba(0,0,0,.08);
+  box-shadow:0 1px 2px rgba(0,0,0,.05);
+  font-weight:600;
+}
+.port-btn:hover{ filter:brightness(0.95); }
+</style>
 
-## Contact & Links
-<div style="margin: 1rem 0;">
-  <a class="btn" href="mailto:d.double76@icloud.com">Email Me</a>
-  <a class="btn" href="https://www.linkedin.com/in/derrick-dzormeku-mba-75288644" target="_blank" rel="noopener">LinkedIn</a>
-  <a class="btn" href="{{ site.github.repository_url }}">GitHub Repo</a>
-  <a class="btn" href="{{ '/resume.pdf' | relative_url }}">Download Résumé</a>
-</div>
+## Contact & links
+
+<p>
+  <a class="port-btn" href="mailto:d.double76@icloud.com">Email me</a>
+  <a class="port-btn" href="https://www.linkedin.com/in/derrick-dzormeku-mba-75288644" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="port-btn" href="{{ site.github.repository_url }}">GitHub repo</a>
+  <a class="port-btn" href="{{ '/resume.pdf' | relative_url }}">Download résumé</a>
+</p>
 
 <small>Site theme powered by GitHub Pages. All datasets shown here are anonymized.</small>
