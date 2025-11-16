@@ -135,17 +135,70 @@ I turn complex, real-world data into **clear actionable insight for decision mak
 
 ## Contact & links
 
-<a class="port-btn"
-   href="https://mail.google.com/mail/?view=cm&fs=1&to=d.double76@icloud.com&su=Portfolio%20inquiry%20%E2%80%93%20Derrick%20Dzormeku&body=Hi%20Derrick,%0D%0A%0D%0AI%27m%20reaching%20out%20about%20your%20analytics%20portfolio.%20Could%20we%20schedule%20a%20brief%20call%3F"
-   target="_blank" rel="noopener">
-  Email via Gmail
-</a>
+## Contact & links
 
-<a class="port-btn"
-   href="https://outlook.office.com/mail/deeplink/compose?to=d.double76@icloud.com&subject=Portfolio%20inquiry%20%E2%80%93%20Derrick%20Dzormeku&body=Hi%20Derrick,%0D%0A%0D%0AI%27m%20reaching%20out%20about%20your%20analytics%20portfolio.%20Could%20we%20schedule%20a%20brief%20call%3F"
-   target="_blank" rel="noopener">
-  Email via Outlook
-</a>
+<p>
+  <!-- chooser UI -->
+  <label for="email-provider" style="margin-right:.5rem;font-weight:600;">
+    Choose email app:
+  </label>
+  <select id="email-provider" style="padding:.45rem;border-radius:8px;margin-right:.5rem;">
+    <option value="mailto">Default mail app (desktop)</option>
+    <option value="gmail">Gmail</option>
+    <option value="outlook">Outlook (Microsoft 365)</option>
+    <option value="yahoo">Yahoo Mail</option>
+  </select>
+
+  <a class="port-btn" href="#" onclick="composeEmail();return false;">Compose email</a>
+</p>
+
+<!-- keep your other buttons -->
+<p>
+  <a class="port-btn" href="https://www.linkedin.com/in/derrick-dzormeku-mba-75288644" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="port-btn" href="{{ site.github.repository_url }}">GitHub repo</a>
+  <a class="port-btn" href="{{ '/resume.pdf' | relative_url }}">Download résumé</a>
+</p>
+
+<!-- noscript fallback -->
+<noscript>
+  <p>
+    JavaScript is disabled. Please email:
+    <a href="mailto:d.double76@icloud.com?subject=Portfolio%20inquiry%20%E2%80%93%20Derrick%20Dzormeku">
+      d.double76@icloud.com
+    </a>
+  </p>
+</noscript>
+
+<script>
+(function () {
+  const to = 'd.double76@icloud.com';
+  const subject = 'Portfolio inquiry – Derrick Dzormeku';
+  const body = "Hi Derrick,\n\nI'm reaching out about your analytics portfolio. Could we schedule a brief call?\n\nThanks!";
+
+  function enc(s){ return encodeURIComponent(s); }
+
+  window.composeEmail = function () {
+    const p = document.getElementById('email-provider').value;
+    const TO = enc(to), SUBJ = enc(subject), BODY = enc(body);
+
+    let url = '';
+    if (p === 'gmail') {
+      url = `https://mail.google.com/mail/?view=cm&fs=1&to=${TO}&su=${SUBJ}&body=${BODY}`;
+      window.open(url, '_blank', 'noopener');
+    } else if (p === 'outlook') {
+      url = `https://outlook.office.com/mail/deeplink/compose?to=${TO}&subject=${SUBJ}&body=${BODY}`;
+      window.open(url, '_blank', 'noopener');
+    } else if (p === 'yahoo') {
+      url = `https://compose.mail.yahoo.com/?to=${TO}&subject=${SUBJ}&body=${BODY}`;
+      window.open(url, '_blank', 'noopener');
+    } else {
+      // Default desktop mail app (mailto)
+      url = `mailto:${to}?subject=${SUBJ}&body=${BODY}`;
+      window.location.href = url;
+    }
+  };
+})();
+</script>
   <a class="port-btn" href="https://www.linkedin.com/in/derrick-dzormeku-mba-75288644" target="_blank" rel="noopener">LinkedIn</a>
   <a class="port-btn" href="{{ site.github.repository_url }}">GitHub repo</a>
   <a class="port-btn" href="{{ '/resume.pdf' | relative_url }}">Download résumé</a>
