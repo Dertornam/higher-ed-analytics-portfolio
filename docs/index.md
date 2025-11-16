@@ -1,110 +1,128 @@
 ---
+title: Higher-Ed & Healthcare Analytics Portfolio
 layout: default
-title: Higher-Ed Analytics Portfolio
 ---
 
-<style>
-:root { --bg:#0f172a; --card:#0b1220; --text:#e5e7eb; --muted:#94a3b8; --accent1:#22d3ee; --accent2:#34d399; }
-.hero { padding:2.5rem 1rem; background: linear-gradient(135deg, var(--accent1), var(--accent2));
-  color:#0b1220; border-radius:12px; text-align:center; margin-bottom:1.5rem; }
-.hero h1{ margin:0 0 .25rem 0; font-size:2.0rem; }
-.btn-row{ margin-top:1rem; display:inline-flex; gap:.75rem; flex-wrap:wrap; }
-.btn{ display:inline-block; padding:.6rem 1rem; border-radius:999px; text-decoration:none; font-weight:600; }
-.btn.primary{ background:#0b1220; color:#e5e7eb; }
-.btn.ghost{ border:2px solid #0b1220; color:#0b1220; }
-.grid{ display:grid; gap:1rem; } @media(min-width:900px){ .grid.cols-2{ grid-template-columns:1fr 1fr; } }
-.card{ background:var(--card); color:var(--text); border-radius:12px; padding:1rem; box-shadow:0 2px 12px rgba(0,0,0,.4); }
-.caption, figcaption{ color:var(--muted); }
-figure{ margin:0; } figure img{ width:100%; border-radius:10px; }
-.card:hover{ box-shadow:0 8px 30px rgba(0,0,0,.55); transform:translateY(-1px); transition:.18s; }
-footer.small{ margin-top:1.5rem; font-size:.9rem; color:var(--muted); }
-</style>
+# Higher-Ed & Healthcare Analytics Portfolio
+Anonymized datasets, end-to-end analysis, dashboards & automated reporting
 
-<div class="hero">
-  <h1>Turning Higher-Ed Data into Actionable Insights</h1>
-  <p>From messy sources to clear decisions—cleaning, analysis, and automated reporting.</p>
-  <div class="btn-row">
-    <a class="btn primary" href="#work">Explore My Projects</a>
-    <a class="btn ghost" href="https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}">View on GitHub</a>
-    <a class="btn ghost" href="./resume.pdf">Download Résumé</a>
-  </div>
-  <div class="kpis" style="margin-top:1rem;">
-    <div class="kpi">RNL PSOL multi-year analysis</div>
-    <div class="kpi">SPSS + Python reproducibility</div>
-    <div class="kpi">Auto weekly Markdown reports</div>
-  </div>
-</div>
-
-## Overview
-Imagine messy student surveys and employer lists transformed into decisions leaders can act on.
-This portfolio shows how I clean, analyze, and visualize higher-ed data—fast and repeatably.
-
-**Process**: Raw Data → Cleaning → Analysis → Visualization → Insights
-
----
-
-## Why Higher-Ed Analytics?
-- Improve student satisfaction, retention, and time-to-degree.  
-- Support accreditation/IPEDS reporting with trustworthy pipelines.  
-- Give leaders tight, visual summaries they can use in minutes.
-
----
-
-## Featured visuals {#work}
-
-<div class="grid cols-2">
-  <div class="card">
-    <figure>
-      <img src="./fig_1.png" alt="Importance vs Satisfaction map">
-      <figcaption><strong>Satisfaction Map.</strong> Prioritizes gaps between importance and satisfaction to guide resource allocation.</figcaption>
-    </figure>
-  </div>
-  <div class="card">
-    <figure>
-      <img src="./fig_2.png" alt="Cohort Likert comparisons">
-      <figcaption><strong>Cohort Likerts.</strong> Compares item-level satisfaction across student groups to target interventions.</figcaption>
-    </figure>
-  </div>
-</div>
-
-<p class="caption">
-See also: <a href="./report.md">Weekly Insights (Markdown)</a> · <a href="./cleaned.csv">Cleaned employers CSV</a>
-</p>
-
----
-
-## Mini case study: Data-informed improvement
-**Challenge:** Identify the levers behind student satisfaction and convert findings into an executive brief.  
-**Approach:** Merged multi-year RNL PSOL responses; built SPSS syntax for recodes; used Python for charts and an automated Markdown report; framed actions with Improvement Science (PDSA).  
-**Impact:** Clear, prioritized actions for program leads; reproducible pipeline for semester refreshes.
-
----
-
-## Statistical analysis
-
-- **Descriptive statistics:** [CSV]({{ '/desc_stats.csv' | relative_url }})
-- **Correlation matrix:** [CSV]({{ '/corr_matrix.csv' | relative_url }}) ·
-  [Heatmap]({{ '/corr_heatmap.png' | relative_url }})
-- **Regression (OLS):** [Results]({{ '/regression_results.md' | relative_url }})
-
-*Runs on anonymized datasets and refreshes via GitHub Actions.*
----
-
-## Skills & Tools
-<div class="badges">
-  <span>SPSS</span> <span>Python</span> <span>Pandas</span> <span>Matplotlib</span>
-  <span>Tableau</span> <span>SQL</span> <span>Markdown automation</span>
-  <span>GitHub Actions</span> <span>Data governance & policy</span>
+<div style="margin: 1rem 0;">
+  <a class="btn" href="{{ site.github.repository_url }}">View on GitHub</a>
+  <a class="btn" href="#projects">Explore My Projects</a>
+  <a class="btn" href="{{ '/resume.pdf' | relative_url }}">Download Résumé</a>
+  <a class="btn" href="https://www.linkedin.com/in/derrick-dzormeku-mba-75288644" target="_blank" rel="noopener">LinkedIn</a>
 </div>
 
 ---
 
-## What I bring to your team
-- Data cleaning & reproducibility across SPSS and Python.  
-- Survey analytics expertise (Likerts, gap analysis, cohort comparisons).  
-- Automated reporting workflows that keep leaders updated weekly.  
-- Improvement Science (PDSA) framing to turn insights into practice.
+## Professional summary
+> Strategic and customer-centered Data Analyst with over 5 years of experience leading data-driven initiatives. Proficient in Python, SPSS, R, Power BI and Tableau, with a proven record of developing scalable insights that enhance user engagement, satisfaction, and program effectiveness. Experienced in sentiment analysis, survey management, and cross-functional collaboration to drive business impact. Passionate about crafting data solutions that improve experiences and reduce churn.
 
-<footer class="small">
-  All datasets shown here are anonymized.
-</footer>
+**Keywords:** data analytics, Python, SPSS, R, Tableau, Power BI, predictive modeling, survey analytics, reporting automation, GitHub Actions, reproducible workflows
+
+---
+
+## Why this portfolio?
+I turn complex, real-world data into **clear actionable insight for decision making**. Each project shows a reproducible pipeline:
+**Raw Data → Cleaning → Analysis/Models → Visualization → Insight → Action.**
+
+---
+
+## Featured projects  {#projects}
+
+### 1) Student Satisfaction Toolkit (Higher-Ed)
+**Context:** Prioritize improvements using anonymized survey data.  
+**Tools & techniques:** Python (Pandas, Matplotlib), SPSS, Markdown reporting.  
+**Methods:** Descriptives · Likert analysis · Quadrant “importance vs satisfaction” map.  
+**Impact:** Clear priorities for resource allocation and weekly insights for stakeholders.  
+**Links:** 
+- Visual: ![Satisfaction map]({{ '/fig_importance_vs_satisfaction.png' | relative_url }})
+- Cohorts: ![Cohort comparison]({{ '/fig_likert_by_cohort.png' | relative_url }})
+- Weekly report (Markdown): [Open]({{ '/04-reporting-automation/outputs/report.md' | relative_url }})
+
+---
+
+### 2) Microsurvey Pulse (Rapid insights)
+**Context:** Quick, frequent pulse checks on key experiences.  
+**Tools & techniques:** Python (Pandas), GitHub Actions for auto-refresh.  
+**Methods:** Descriptives · Correlation · Simple regression where applicable.  
+**Impact:** Moves analysis turnaround from weeks to hours; keeps leaders updated.  
+**Links:** 
+- Descriptives CSV: [Download]({{ '/desc_stats.csv' | relative_url }})
+- Correlation CSV: [Download]({{ '/corr_matrix.csv' | relative_url }})
+- Correlation heatmap: ![Heatmap]({{ '/corr_heatmap.png' | relative_url }})
+- Regression results (Markdown): [Open]({{ '/regression_results.md' | relative_url }})
+
+---
+
+### 3) Employer Dataset Cleaning (Data quality)
+**Context:** Normalize employer names for reporting and matching.  
+**Tools & techniques:** Python (string ops), canonical mapping.  
+**Impact:** Cleaned dataset reduces manual cleanup and errors in downstream analytics.  
+**Link:** [Cleaned employers CSV]({{ '/employers_clean.csv' | relative_url }})
+
+---
+
+## Statistical analysis showcase
+**Descriptive statistics** — ready-to-download tables.  
+- [Descriptives CSV]({{ '/desc_stats.csv' | relative_url }})
+
+**Correlation analysis** — full matrix + visual.  
+- [Correlation CSV]({{ '/corr_matrix.csv' | relative_url }}) · ![Heatmap]({{ '/corr_heatmap.png' | relative_url }})
+
+**Regression models** — variables, coefficients, *R²*, notes.  
+- [Regression Results]({{ '/regression_results.md' | relative_url }})
+
+> All datasets and figures are **anonymized** and reproducible.
+
+---
+
+## Technical skills
+**Programming:** Python, R, SQL  
+**Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, scikit-learn  
+**Visualization:** Tableau, Power BI, Plotly  
+**Workflow:** Git, GitHub Actions, Markdown reporting, reproducible pipelines  
+**Statistics:** Descriptives, correlation, regression, ANOVA, predictive modeling  
+**Survey tools:** Qualtrics, SPSS
+
+---
+
+## Certifications & education
+**Certifications:**  
+- Google Data Analytics Professional Certificate  
+- Google Analytics Individual Qualification  
+- WWC Group Design Standard (IES)  
+- CITI Program – Social & Behavioral Research (valid)
+
+**Education:**  
+- MBA, Business Data Analytics — Mount Vernon Nazarene University  
+- MBA, Organizational Management — Mount Vernon Nazarene University  
+- BSc, Business Administration (Marketing) — Evangelical Presbyterian University College
+
+---
+
+## Publications & thought leadership
+- *Devising a Holistic Data Dashboard* – district collaboration for schoolwide improvement  
+- *Understanding School Principals’ Perspectives on Using Data*  
+- Conference sessions: UCEA (2022 & 2023), AERA (2024)
+
+> Ask me about continuous improvement, assessments, survey measurement, and data-informed culture.
+
+---
+
+## Impact metrics (examples)
+- Automated reporting reduced manual compilation by **10%**.  
+- Increased survey response rates by **16%** via process improvements.  
+- Cut analysis turnaround from **2 months to 3 weeks** with reproducible workflows.
+
+---
+
+## Contact & links
+<div style="margin: 1rem 0;">
+  <a class="btn" href="mailto:d.double76@icloud.com">Email Me</a>
+  <a class="btn" href="https://www.linkedin.com/in/derrick-dzormeku-mba-75288644" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="btn" href="{{ site.github.repository_url }}">GitHub Repo</a>
+  <a class="btn" href="{{ '/resume.pdf' | relative_url }}">Download Résumé</a>
+</div>
+
+<small>Site theme powered by GitHub Pages. All datasets shown here are anonymized.</small>
