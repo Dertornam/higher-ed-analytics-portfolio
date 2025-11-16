@@ -136,7 +136,7 @@ I turn complex, real-world data into **clear actionable insight for decision mak
 ## Contact & links
 
 <a class="port-btn"
-   href="mailto: d.double76@icloud.com?subject=Portfolio%20inquiry%20%E2%80%93%20Derrick%20Dzormeku&body=Hi%20Derrick,%0D%0A%0D%0AI%27m%20reaching%20out%20about%20your%20analytics%20portfolio.%20Could%20we%20schedule%20a%20brief%20call%3F%0D%0A%0D%0AThanks!"
+   href="mailto: d.double76@icloud.com subject=Portfolio%20inquiry%20%E2%80%93%20Derrick%20Dzormeku&body=Hi%20Derrick,%0D%0A%0D%0AI%27m%20reaching%20out%20about%20your%20analytics%20portfolio.%20Could%20we%20schedule%20a%20brief%20call%3F%0D%0A%0D%0AThanks!"
 >
   Email me
 </a>
