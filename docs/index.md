@@ -103,6 +103,30 @@ I turn complex, real-world data into **clear actionable insight for decision mak
 
 ---
 
+## Higher-ed statistical analysis (full workflow)
+
+This section mirrors the healthcare analytics portfolio but focuses on student outcomes, satisfaction, and retention in higher education.
+
+[Descriptive statistics — narrative and download](higher_ed_desc_stats.html)  
+
+[Correlation matrix — narrative and download](higher_ed_corr_matrix.html)  
+
+[ANOVA — overall satisfaction by modality](higher_ed_anova_modality_satisfaction.html)  
+
+[OLS regression — term GPA model](higher_ed_ols_gpa_model.html)  
+
+[Logistic regression — next-term retention model](higher_ed_logit_retention_model.html)
+
+### Key visuals
+
+![Overall satisfaction by modality](higher_ed_boxplot_satisfaction_by_modality.png)
+
+![Retention rate by program level](higher_ed_retention_by_program_level.png)
+
+![Relationship between satisfaction and GPA](higher_ed_scatter_satisfaction_vs_gpa.png)
+
+---
+
 ## Certifications & Education
 **Certifications:**  
 - Google Data Analytics Professional Certificate  
