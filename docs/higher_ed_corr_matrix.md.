@@ -1,0 +1,21 @@
+# Correlation matrix — higher-ed dataset
+
+This page describes the correlation structure among key numeric variables in the higher-education dataset.
+
+## Data source
+
+Full correlation matrix:
+
+- [Download correlation matrix (CSV)](higher_ed_corr_matrix.csv)
+
+This table includes correlations among GPA, credits attempted and completed, satisfaction indices, unmet financial need, financial aid flags, and retention.
+
+## Interpretation — Correlations
+
+Academic performance and satisfaction are positively related. Students with higher term GPA tend to report higher overall satisfaction and give higher recommendation scores.
+
+Credits completed shows positive associations with GPA and retention. Students who finish more of what they attempt are more likely to persist to the next term.
+
+Unmet financial need tends to correlate negatively with satisfaction and retention. As net cost rises, students are slightly less satisfied and a bit less likely to return, even when controlling only at the bivariate level.
+
+These correlations do not prove causality, but they highlight plausible levers. Academic support, customer-centered services, and financial support should be viewed as connected systems rather than isolated interventions.
