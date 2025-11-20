@@ -1,0 +1,21 @@
+# Higher-ed descriptive statistics
+
+This page summarizes the main descriptive statistics for the synthetic higher-education dataset used in the portfolio.
+
+## Data source
+
+Full table (all variables, n, mean, sd, and percentiles):
+
+- [Download descriptive statistics (CSV)](higher_ed_desc_stats.csv)
+
+The dataset includes student-level records with program level, modality, credits, GPA, satisfaction scores, financial indicators, and retention status.
+
+## Interpretation — Descriptive statistics
+
+Most students attempt a typical full-time load each term and complete a high share of attempted credits. Term GPA and cumulative GPA tend to sit above the 3.0 mark, with graduate students usually a little higher than undergraduates.
+
+Overall satisfaction scores fall in the “satisfied” range on a 1–5 scale. Satisfaction with advising, online services, and facilities tracks closely with overall satisfaction but varies across modalities and programs.
+
+Financial aid flags and unmet need show that many students still carry non-trivial unpaid cost, even when they receive some form of aid. That sets up later analyses on how financial strain interacts with satisfaction and retention.
+
+Retention_next_term is coded as 0 or 1. The distribution shows that most students return, but a meaningful minority do not, which is enough variation to support logistic regression and subgroup comparisons.
