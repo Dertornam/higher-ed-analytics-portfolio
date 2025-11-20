@@ -1,0 +1,23 @@
+# OLS regression — Term GPA
+
+This page summarizes an OLS model predicting term GPA from satisfaction, credit completion, and program level.
+
+## Data source
+
+Model coefficients, standard errors, and p-values:
+
+- [Download OLS coefficients (CSV)](higher_ed_ols_gpa_model_coefficients.csv)
+
+Model specification:
+
+`gpa_term ~ satisfaction_overall + credits_completed + C(program_level)`
+
+## Interpretation — Academic performance model
+
+Higher overall satisfaction is associated with higher term GPA, even after controlling for credits completed and whether the student is undergraduate or graduate. In other words, experience and performance move together.
+
+Credits completed has a positive coefficient. Students who successfully complete more credits in the term also tend to earn higher GPAs. That pattern fits an engagement story: more successful course-taking and stronger performance go hand in hand.
+
+Graduate status carries a positive effect relative to undergraduates. Graduate students in this synthetic dataset usually show slightly higher GPAs, which aligns with typical higher-education patterns.
+
+For practice, this model suggests that academic support, student experience work, and credit momentum strategies reinforce one another. When you improve one, you often help the others, and the gains show up in GPA rather than just in satisfaction scores.
