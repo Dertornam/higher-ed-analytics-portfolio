@@ -1,0 +1,22 @@
+# ANOVA — Overall satisfaction by modality
+
+This page summarizes a one-way ANOVA testing whether overall satisfaction differs across learning modalities.
+
+## Data source
+
+ANOVA table:
+
+- [Download ANOVA results (CSV)](higher_ed_anova_satisfaction_by_modality.csv)
+
+The model:  
+`Overall satisfaction ~ Modality (Online, On-campus, Hybrid)`
+
+## Interpretation — Modality and experience
+
+The ANOVA shows a statistically significant effect of modality on overall satisfaction. At least one modality has a mean satisfaction score that differs meaningfully from the others.
+
+In this synthetic dataset, online students tend to report slightly higher satisfaction than on-campus students, with hybrid students often in the middle. That pattern fits a story where flexibility and well-designed online services help boost perceived experience.
+
+For leaders, the implication is not that one modality is “best,” but that expectations and support structures differ. On-campus students rely more on physical facilities and in-person services, while online students depend heavily on digital services and timely communication.
+
+A practical next step would be to follow this ANOVA with item-level comparisons. You can then pinpoint which dimensions of experience drive the modality differences and where targeted improvements could have the most impact.
