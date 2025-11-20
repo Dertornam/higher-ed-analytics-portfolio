@@ -103,19 +103,19 @@ I turn complex, real-world data into **clear actionable insight for decision mak
 
 ---
 
-## Higher-ed statistical analysis (full workflow)
+## Statistical Analysis (full workflow)
 
-This section mirrors the healthcare analytics portfolio but focuses on student outcomes, satisfaction, and retention in higher education.
+This section focuses on student outcomes, satisfaction, and retention.
 
-[Descriptive statistics — narrative and download](higher_ed_desc_stats.html)  
+- **Descriptive statistics (table):** [higher_ed_desc_stats.md](higher_ed_desc_stats.md)  
 
-[Correlation matrix — narrative and download](higher_ed_corr_matrix.html)  
+- **Correlation matrix:**[higher_ed_corr_matrix.md](higher_ed_corr_matrix.md)  
 
-[ANOVA — overall satisfaction by modality](higher_ed_anova_modality_satisfaction.html)  
+- **ANOVA (year):** [higher_ed_anova_modality_satisfaction.md](higher_ed_anova_modality_satisfaction.md)  
 
-[OLS regression — term GPA model](higher_ed_ols_gpa_model.html)  
+- **OLS (gpa):**[higher_ed_ols_gpa_model.md](higher_ed_ols_gpa_model.md)  
 
-[Logistic regression — next-term retention model](higher_ed_logit_retention_model.html)
+- **Logistic regression:** (retention):[higher_ed_logit_retention_model.md](higher_ed_logit_retention_model.md)
 
 ### Key visuals
 
