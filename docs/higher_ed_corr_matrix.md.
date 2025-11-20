@@ -1,21 +1,131 @@
-# Correlation matrix — higher-ed dataset
+# Correlation matrix
 
-This page describes the correlation structure among key numeric variables in the higher-education dataset.
+<div style='max-width:100%; overflow-x:auto; padding:6px; border:1px solid #e5e7eb; border-radius:8px;'>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>credits_attempted</th>
+      <th>credits_completed</th>
+      <th>gpa_term</th>
+      <th>cum_gpa</th>
+      <th>satisfaction_overall</th>
+      <th>nps_score</th>
+      <th>unmet_need</th>
+      <th>retention_next_term</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>age</th>
+      <td>1.000</td>
+      <td>0.007</td>
+      <td>-0.003</td>
+      <td>0.217</td>
+      <td>0.213</td>
+      <td>0.105</td>
+      <td>-0.005</td>
+      <td>0.018</td>
+      <td>0.063</td>
+    </tr>
+    <tr>
+      <th>credits_attempted</th>
+      <td>0.007</td>
+      <td>1.000</td>
+      <td>0.943</td>
+      <td>-0.023</td>
+      <td>-0.019</td>
+      <td>0.003</td>
+      <td>0.004</td>
+      <td>-0.012</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <th>credits_completed</th>
+      <td>-0.003</td>
+      <td>0.943</td>
+      <td>1.000</td>
+      <td>-0.008</td>
+      <td>-0.006</td>
+      <td>0.010</td>
+      <td>0.001</td>
+      <td>-0.014</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <th>gpa_term</th>
+      <td>0.217</td>
+      <td>-0.023</td>
+      <td>-0.008</td>
+      <td>1.000</td>
+      <td>0.935</td>
+      <td>0.430</td>
+      <td>0.055</td>
+      <td>-0.002</td>
+      <td>0.166</td>
+    </tr>
+    <tr>
+      <th>cum_gpa</th>
+      <td>0.213</td>
+      <td>-0.019</td>
+      <td>-0.006</td>
+      <td>0.935</td>
+      <td>1.000</td>
+      <td>0.404</td>
+      <td>0.044</td>
+      <td>0.007</td>
+      <td>0.157</td>
+    </tr>
+    <tr>
+      <th>satisfaction_overall</th>
+      <td>0.105</td>
+      <td>0.003</td>
+      <td>0.010</td>
+      <td>0.430</td>
+      <td>0.404</td>
+      <td>1.000</td>
+      <td>0.226</td>
+      <td>0.012</td>
+      <td>0.151</td>
+    </tr>
+    <tr>
+      <th>nps_score</th>
+      <td>-0.005</td>
+      <td>0.004</td>
+      <td>0.001</td>
+      <td>0.055</td>
+      <td>0.044</td>
+      <td>0.226</td>
+      <td>1.000</td>
+      <td>-0.054</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <th>unmet_need</th>
+      <td>0.018</td>
+      <td>-0.012</td>
+      <td>-0.014</td>
+      <td>-0.002</td>
+      <td>0.007</td>
+      <td>0.012</td>
+      <td>-0.054</td>
+      <td>1.000</td>
+      <td>-0.104</td>
+    </tr>
+    <tr>
+      <th>retention_next_term</th>
+      <td>0.063</td>
+      <td>0.006</td>
+      <td>0.009</td>
+      <td>0.166</td>
+      <td>0.157</td>
+      <td>0.151</td>
+      <td>0.038</td>
+      <td>-0.104</td>
+      <td>1.000</td>
+    </tr>
+  </tbody>
+</table></div>
 
-## Data source
-
-Full correlation matrix:
-
-- [Download correlation matrix (CSV)](higher_ed_corr_matrix.csv)
-
-This table includes correlations among GPA, credits attempted and completed, satisfaction indices, unmet financial need, financial aid flags, and retention.
-
-## Interpretation — Correlations
-
-Academic performance and satisfaction are positively related. Students with higher term GPA tend to report higher overall satisfaction and give higher recommendation scores.
-
-Credits completed shows positive associations with GPA and retention. Students who finish more of what they attempt are more likely to persist to the next term.
-
-Unmet financial need tends to correlate negatively with satisfaction and retention. As net cost rises, students are slightly less satisfied and a bit less likely to return, even when controlling only at the bivariate level.
-
-These correlations do not prove causality, but they highlight plausible levers. Academic support, customer-centered services, and financial support should be viewed as connected systems rather than isolated interventions.
+## Interpretati
