@@ -1,4 +1,4 @@
-# OLS Regression — outcome: `recommendation`
+# OLS Regression — Outcome: `Recommendation`
 
 - N = 300  |  k = 3 predictors
 
