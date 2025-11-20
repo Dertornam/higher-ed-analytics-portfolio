@@ -1,0 +1,25 @@
+# Logistic regression — Next-term retention
+
+This page summarizes a logistic regression model predicting whether a student returns next term.
+
+## Data source
+
+Model coefficients, odds ratios, and p-values:
+
+- [Download logistic regression coefficients (CSV)](higher_ed_logit_retention_model_coefficients.csv)
+
+Model specification:
+
+`retention_next_term ~ gpa_term + satisfaction_overall + unmet_need + C(program_level)`
+
+## Interpretation — Persistence model
+
+Higher term GPA increases the odds that a student returns next term. Each step up in performance is linked with better persistence, even after adjusting for satisfaction, unmet need, and program level.
+
+Higher overall satisfaction also increases retention odds. Students who feel more satisfied with their experience are more likely to re-enroll, which echoes the idea that “service quality is a retention strategy.”
+
+Unmet financial need works in the opposite direction. As unmet need rises, the odds of returning drop. This highlights how financial stress can undercut otherwise strong academic and experiential signals.
+
+Graduate students generally have higher retention odds than undergraduates in this synthetic sample. That pattern is common in many institutions and reminds us that first-time undergraduates often require more intensive wraparound support.
+
+Taken together, the model shows retention as a multifactor outcome. Academic performance, student experience, and net price are interlocking levers that need coordinated strategies rather than siloed fixes.
