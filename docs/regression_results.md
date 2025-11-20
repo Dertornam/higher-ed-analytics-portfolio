@@ -12,6 +12,7 @@
 
 ## Full summary
 ```
+<pre>
                             OLS Regression Results                            
 ==============================================================================
 Dep. Variable:         recommendation   R-squared:                       0.009
@@ -36,7 +37,7 @@ Prob(Omnibus):                  0.000   Jarque-Bera (JB):               16.185
 Skew:                           0.079   Prob(JB):                     0.000306
 Kurtosis:                       1.873   Cond. No.                         23.3
 ==============================================================================
-
+</pre>
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
