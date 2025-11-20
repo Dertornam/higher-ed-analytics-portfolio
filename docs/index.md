@@ -181,7 +181,7 @@ This section mirrors the healthcare analytics portfolio but focuses on student o
   Email via Gmail
 </a>
   <a class="port-btn" href="https://www.linkedin.com/in/derrick-dzormeku-mba-75288644" target="_blank" rel="noopener">LinkedIn</a>
-  <a class="port-btn" href="{{ site.github.repository_url }}">GitHub repo</a>
-  <a class="port-btn" href="{{ '/resume.pdf' | relative_url }}">Download résumé</a>
+  <a class="port-btn" href="{{ site.github.repository_url }}">GitHub Repo</a>
+  <a class="port-btn" href="{{ '/resume.pdf' | relative_url }}">Download Résumé</a>
 
 <small>Site theme powered by GitHub Pages. All datasets shown here are anonymized.</small>
