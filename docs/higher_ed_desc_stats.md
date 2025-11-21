@@ -3,7 +3,7 @@ layout: default
 title: Higher-ed descriptive statistics
 ---
 
-<h1>Descriptive statistics</h1>
+<h1>Descriptive Statistics</h1>
 <div style='max-width:100%; overflow-x:auto; padding:6px; border:1px solid #e5e7eb; border-radius:8px;'>
 <table border="1" class="dataframe">
   <thead>
@@ -123,13 +123,13 @@ title: Higher-ed descriptive statistics
 </table>
 </div>
 
-## Interpretation — Descriptive statistics
+## Interpretation — Descriptive Statistics
 
-**What stands out.**  
+**What stands out**  
 Students are mostly in the early twenties, taking a typical full-time load of around ten to eleven credits and completing most of what they attempt. Term and cumulative GPA both sit just above 3.0, with only a small spread between quartiles. Overall satisfaction hovers a little above 3 on a 1–5 scale, and Net Promoter Scores cluster around the mid-range. Unmet financial need averages about three thousand dollars but spreads widely across students. Roughly a third of students do not return the next term.
 
-**What it means.**  
+**What it means**  
 The distributions suggest a generally successful population with a sizeable tail of financial strain and academic vulnerability. Means and medians are very close for GPA and satisfaction, so central tendency is stable there, but unmet need behaves more like a risk variable with a long right tail. The retention rate leaves enough non-returners to support meaningful modeling and segmentation.
 
-**Actions.**  
+**Actions**  
 Use this profile as the baseline for deeper cuts. Compare these same statistics by program level, modality, and college to see where GPA, satisfaction, unmet need, and retention diverge. Those gaps can then feed into dashboards and targeted interventions for specific student groups rather than a one-size-fits-all strategy.
