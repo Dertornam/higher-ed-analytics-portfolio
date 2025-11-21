@@ -134,3 +134,15 @@ title: Higher-ed correlation matrix
 </table></div>
 
 ## Interpretation
+
+The correlation matrix shows three clear clusters of relationships: academic performance, student sentiment, and retention.
+
+Term GPA and cumulative GPA move almost in lockstep (r ≈ 0.94), which tells us that how a student is doing this term is very similar to their overall academic history. Credits attempted and credits completed are also extremely tightly linked (r ≈ 0.94), so once students register for credits, most of them complete what they start.
+
+Academic performance and satisfaction point in the same direction. Higher term GPA and cumulative GPA are moderately associated with higher overall satisfaction (r ≈ 0.43 and 0.40). In simple terms, students who are doing well academically tend to feel better about their experience. Age also shows a small positive relationship with GPA and satisfaction, suggesting that older students may be slightly more settled and academically successful.
+
+Student sentiment behaves as expected. Overall satisfaction and NPS score are positively related (r ≈ 0.23), which fits the idea that satisfied students are more likely to recommend the institution. Most other links between NPS and academics or financial variables are very weak, so NPS is capturing a broader “experience” signal rather than purely academic or financial stress.
+
+Unmet financial need tilts in the opposite direction of retention (r ≈ -0.10) and slightly in the opposite direction of NPS. This is a small effect, but it points the same way as the stories we often hear: students who feel more financially stretched are a bit less likely to come back and a bit less enthusiastic in recommending the institution.
+
+Retention into the next term is only modestly related to any single variable. It shows small positive correlations with term GPA, cumulative GPA, and overall satisfaction (r ≈ 0.15–0.17). Think of retention as a door that opens more easily when grades and satisfaction are higher, but it is still controlled by many other unmeasured factors like life events, work, and family responsibilities.
