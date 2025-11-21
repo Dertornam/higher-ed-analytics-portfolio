@@ -1,4 +1,4 @@
-# OLS: term GPA
+# OLS: Term GPA
 
 
 <pre>
