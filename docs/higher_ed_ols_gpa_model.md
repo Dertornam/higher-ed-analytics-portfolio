@@ -1,7 +1,5 @@
 # OLS: term GPA
 
-<details>
-<summary><strong>Open full stats output</strong></summary>
 
 <pre>
                             OLS Regression Results                            
