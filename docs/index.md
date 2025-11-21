@@ -107,15 +107,15 @@ I turn complex, real-world data into **clear actionable insight for decision mak
 
 This section focuses on student outcomes, satisfaction, and retention.
 
-- **Descriptive statistics (table):** [higher_ed_desc_stats.md](higher_ed_desc_stats.md)  
+- **Descriptive statistics (table):** [View page]({{ '/higher_ed_desc_stats.html' | relative_url }})
 
-- **Correlation matrix:** [higher_ed_corr_matrix.md](higher_ed_corr_matrix.md)  
+- **Correlation matrix:** [View page]({{ '/higher_ed_corr_matrix.html' | relative_url }})
 
-- **ANOVA (year):** [higher_ed_anova_modality_satisfaction.md](higher_ed_anova_modality_satisfaction.md)  
+- **ANOVA (year):** [View page]({{ '/higher_ed_anova_modality_satisfaction.html' | relative_url }})
 
-- **OLS (gpa):** [higher_ed_ols_gpa_model.md](higher_ed_ols_gpa_model.md)  
+- **OLS (gpa):** [View page]({{ '/higher_ed_ols_gpa_model.html' | relative_url }})
 
-- **Logistic regression:** (retention): [higher_ed_logit_retention_model.md](higher_ed_logit_retention_model.md)
+- **Logistic regression:** (retention): [View page]({{ '/higher_ed_logit_retention_model.html' | relative_url }})
 
 ### Key visuals
 
