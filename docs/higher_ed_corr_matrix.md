@@ -3,7 +3,7 @@ layout: default
 title: Higher-ed correlation matrix
 ---
 
-# Correlation matrix
+# Correlation Matrix
 
 <div style='max-width:100%; overflow-x:auto; padding:6px; border:1px solid #e5e7eb; border-radius:8px;'>
 <table border="1" class="dataframe">
@@ -133,16 +133,13 @@ title: Higher-ed correlation matrix
   </tbody>
 </table></div>
 
-## Interpretation
+## Interpretation — Correlation Matrix
 
-The correlation matrix shows three clear clusters of relationships: academic performance, student sentiment, and retention.
+**What stands out**
+Term GPA and cumulative GPA move almost together, with a very strong positive relationship. Credits attempted and credits completed show the same pattern, which means most students complete what they sign up for. Overall satisfaction is moderately tied to both term and cumulative GPA, and it also lines up with NPS, so happier students tend to be better performers and more willing to recommend the institution. Unmet financial need has a small negative relationship with retention, while GPA and satisfaction have small positive links to coming back next term.
 
-Term GPA and cumulative GPA move almost in lockstep (r ≈ 0.94), which tells us that how a student is doing this term is very similar to their overall academic history. Credits attempted and credits completed are also extremely tightly linked (r ≈ 0.94), so once students register for credits, most of them complete what they start.
+**What it means**
+Academics and sentiment are pulling in the same direction. When students are doing well, they usually feel better about their experience and are slightly more likely to return. Retention, however, is not dominated by any single variable; it behaves more like a decision influenced by many small pushes rather than one big lever. Unmet need pulls retention down only a little on its own, but it likely combines with GPA and satisfaction to create a “tipping point” for some students, like several small weights added to one side of a scale.
 
-Academic performance and satisfaction point in the same direction. Higher term GPA and cumulative GPA are moderately associated with higher overall satisfaction (r ≈ 0.43 and 0.40). In simple terms, students who are doing well academically tend to feel better about their experience. Age also shows a small positive relationship with GPA and satisfaction, suggesting that older students may be slightly more settled and academically successful.
-
-Student sentiment behaves as expected. Overall satisfaction and NPS score are positively related (r ≈ 0.23), which fits the idea that satisfied students are more likely to recommend the institution. Most other links between NPS and academics or financial variables are very weak, so NPS is capturing a broader “experience” signal rather than purely academic or financial stress.
-
-Unmet financial need tilts in the opposite direction of retention (r ≈ -0.10) and slightly in the opposite direction of NPS. This is a small effect, but it points the same way as the stories we often hear: students who feel more financially stretched are a bit less likely to come back and a bit less enthusiastic in recommending the institution.
-
-Retention into the next term is only modestly related to any single variable. It shows small positive correlations with term GPA, cumulative GPA, and overall satisfaction (r ≈ 0.15–0.17). Think of retention as a door that opens more easily when grades and satisfaction are higher, but it is still controlled by many other unmeasured factors like life events, work, and family responsibilities.
+**Actions**
+Treat GPA, satisfaction, and NPS as a connected cluster rather than separate silos. Use them together to flag students who are academically shaky and emotionally disengaged, then layer in unmet need to prioritize outreach. Build simple dashboards or heatmaps that show these correlations by program, modality, and cohort so leaders can see where the relationships are stronger or weaker, and target tutoring, advising, and financial counseling where the patterns signal the greatest risk.
