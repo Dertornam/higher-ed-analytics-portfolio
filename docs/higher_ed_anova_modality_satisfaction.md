@@ -3,7 +3,7 @@ layout: default
 title: ANOVA – modality and satisfaction
 ---
 
-<h1>ANOVA — overall satisfaction by modality</h1>
+<h1>ANOVA — Overall Satisfaction by Modality</h1>
 <div style='max-width:100%; overflow-x:auto; padding:6px; border:1px solid #e5e7eb; border-radius:8px;'>
 <table border="1" class="dataframe">
   <thead>
@@ -29,11 +29,11 @@ title: ANOVA – modality and satisfaction
 
 ## Interpretation — ANOVA (overall satisfaction by modality)
 
-**What the test says.**  
+**What the test says**  
 Average overall satisfaction is not the same across modalities. The F-statistic is large and the p-value is effectively zero, so the differences in mean satisfaction between Online, On-campus, and Hybrid students are very unlikely to be due to random noise.
 
-**What it means.**  
+**What it means**  
 Modality itself is tied to how students experience the institution. In this synthetic dataset, online students tend to report slightly higher satisfaction, hybrid students sit in the middle, and on-campus students report somewhat lower scores. That pattern fits a story where flexibility, well-designed online services, and predictable digital touchpoints shape how students rate their overall experience.
 
-**Actions.**  
+**Actions**  
 Use this ANOVA as a screening step. Follow up with item-level comparisons to see which dimensions drive the gap (advising, communication, online services, facilities). Then partner with modality owners: improve digital services and communication for online students to protect their advantage, and use the findings to target specific pain points for on-campus students rather than treating all modalities as if they face the same experience challenges.
