@@ -34,11 +34,11 @@ Notes:
 
 ## Interpretation — OLS (term GPA)
 
-**What the model says.**  
+**What the model says**  
 Term GPA rises with overall satisfaction and with graduate status. Undergraduates, on average, earn slightly lower GPAs than graduate students. Credits completed does not add much explanatory power once satisfaction and program level are in the model.
 
-**What it means for student success.**  
+**What it means for student success**  
 Academic performance and student experience move together. Students who feel more satisfied with their learning environment tend to earn higher GPAs, even after accounting for credit load and level. The gap between graduate and undergraduate GPA reinforces the need for stronger academic and advising support in undergraduate populations.
 
-**Actions.**  
+**Actions**  
 Use this model as a screening tool in dashboards. Flag undergraduate students with lower satisfaction and lower GPA for proactive outreach. Pair academic support (tutoring, success coaching) with experience-focused work (advising quality, communication, online services) so that GPA and satisfaction can improve together rather than in isolation.
